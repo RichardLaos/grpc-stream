@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option go_package = "kacecloud.com/core/notify";
+package notify;
+
+service Notify {
+  rpc Subscribe(Request) returns (stream Notification) {}
+}
+
+message Request {
+  string deviceId = 1;
+}
+
+message Notification {
+  string message = 1;
+}
