@@ -1,4 +1,4 @@
-module grpc-stream
+module github.com/RichardLaos/grpc-stream
 
 go 1.17
 
